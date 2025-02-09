@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Telemedicine App Dashboard</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+        <a href="#" id="viewProfile">Profile</a>
+        <a href="#" id="bookAppointment">book Appointment</a>
+        <a href=" view_appointment.html" id="viewAppointments">View Appointments</a>
+        <a href="#"   id="logout">Logout</a>
+        <a href="#"   id="deleteAccount">Delete Account</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <h2>Welcome to Our Telemedicine Dashboard</h2>
+        <p>Our platform provides efficient and secure telehealth services, allowing you to consult with doctors from the comfort of your home.</p>
+         
+        <div class="container">
+             <h2>View Appointments</h2>
+            <!-- Content for viewing and managing all appointments will be populated here -->
+
+            <!-- Appointments table -->
+            <table id="appointmentsTable" class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentsBody">
+                    <!-- Appointments will be populated here -->
+                </tbody>
+            </table>
+
+            
+             
+
+            <div id="message"></div>          
+            
+            
+
+        </div>
+    
+    </div>
+    <!--Side bar -->
+    <div class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Find a Doctor</a></li>
+            <li><a href="#">Consultation Types</a></li>
+            <li><a href="#">Health Articles</a></li>
+        </ul>
+        <h3>Search</h3>
+        <input type="text" placeholder="Search..." />
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Telemedicine App | Follow us on:
+        <a href="#">Twitter</a> | <a href="#">Facebook</a>
+    </p>
+    <p>Contact us: info@telemedicine.com</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="viewscript.js"></script>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Telemedicine App</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+        <a href="http://localhost:3000/">Home</a>
+        <a href="#">Services</a>
+        <a href="login.html">Patients Login</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <h2>Welcome to Our Telemedicine Platform</h2>
+        <p>Our platform provides efficient and secure telehealth services, allowing you to consult with doctors from the comfort of your home.</p>
+         
+        <div class="container">
+            <h2>Patient Registration Form</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="first_name">First Name <span class="required">*</span>: </label>
+                    <input type="text" id="first_name" name="first_name" required>
+                    <div id="firstNameError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name <span class="required">*</span>: </label>
+                    <input type="text" id="last_name" name="last_name" required>
+                    <div id="lastNameError" class="error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span>: </label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span>: </label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="passwordError" class="error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password <span class="required">*</span>: </label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div id="confirmPasswordError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required">*</span>: </label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div id="phoneError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="date_of_birth">Date of Birth <span class="required">*</span>: </label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" required>
+                    <div id="dobError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender <span class="required">*</span>: </label>
+                    <input type="radio" id="male" name="gender" value="Male" required> Male
+                    <input type="radio" id="female" name="gender" value="Female" required> Female
+                    <input type="radio" id="other" name="gender" value="Other" required> Other
+                    <div id="genderError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span>: </label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                    <div id="addressError" class="error"></div>
+                </div>
+    
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions <span class="required">*</span></label>
+                    <div id="termsError" class="error"></div>
+                </div>
+    
+                <button type="submit">Register</button>
+            </form>
+
+            <div id="formSummary" style="margin-top: 20px;">
+                <h2>Form Summary</h2>
+                <p id="summary"></p>
+            </div>
+
+        </div>
+    
+    </div>
+    <!--Side bar -->
+    <div class="sidebar">
+
+        <!-- <h3>Admin/Doctor Login</h3> -->
+        <ul>
+            <li><a href="doctor_login.html">Doctor Login</a></li>
+            <li><a href="admin_login.html">Admin Login</a></li>
+            <li><a href="register_doctor.html">Doctor Registration</a></li>
+			<li><a href="patient_registration.html">Patient Registration</a></li>
+            <li><a href="login.html">Patients Login</a></li>
+            
+        </ul>     
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Find a Doctor</a></li>
+            <li><a href="#">Consultation Types</a></li>
+            <li><a href="#">Health Articles</a></li>
+        </ul>
+        <h3>Search</h3>
+        <input type="text" placeholder="Search..." />
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Telemedicine App | Follow us on:
+        <a href="#">Twitter</a> | <a href="#">Facebook</a>
+    </p>
+    <p>Contact us: info@telemedicine.com</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="menu_script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* dashboard.css */
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+#profileForm input, #profileForm select {
+    margin-bottom: 10px;
+}
+
+.text-danger {
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Dashboard</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+	    <a href="http://localhost:3000/">Home</a>
+        <a href="doctor_dashboard.html" id="viewProfile">Profile</a>        
+        <a href="doctor_view_appointment.html" id="viewAppointments">View Appointments</a>
+        <a href="#"   id="logout">Logout</a>
+       
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <h2>Welcome to Our Telemedicine Dashboard</h2>
+        <p>Our platform provides efficient and secure telehealth services, allowing you to consult with doctors from the comfort of your home.</p>
+         
+        <div class="container">
+            <div id="content">
+                <!-- Dynamic content will load here (Profile, Appointments, etc.) -->
+            </div>          
+            
+            
+
+        </div>
+    
+    </div>
+    <!--Side bar -->
+    <div class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Find a Doctor</a></li>
+            <li><a href="#">Consultation Types</a></li>
+            <li><a href="#">Health Articles</a></li>
+        </ul>
+        <h3>Search</h3>
+        <input type="text" placeholder="Search..." />
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 Telemedicine App | Follow us on:
+        <a href="#">Twitter</a> | <a href="#">Facebook</a>
+    </p>
+    <p>Contact us: info@telemedicine.com</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="doctor_appointment_viewscript.js"></script>
+<script src="menu_script.js"></script>
+
+
+
+</body>
+</html>

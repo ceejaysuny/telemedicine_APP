@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header - Common Template -->
+<div id="header-container"></div>
+
+<main>
+    <div class="content">
+        <h2>Welcome to Our Telemedicine Platform</h2>
+        <p>Our platform provides efficient and secure telehealth services, allowing you to consult with doctors from the comfort of your home.</p>
+        
+        <!-- Registration Form -->
+        <div class="container">
+            <h2>Patient Registration Form</h2>
+            <form id="registrationForm">
+                <!-- Form Fields Here -->
+                <!-- (The form code remains unchanged from your original code) -->
+            </form>
+
+            <!-- Form Summary -->
+            <div id="formSummary" style="margin-top: 20px;">
+                <h2>Form Summary</h2>
+                <p id="summary"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar - Common Template -->
+    <div id="sidebar-container"></div>
+</main>
+
+<!-- Footer - Common Template -->
+<div id="footer-container"></div>
+
+<!-- Include external scripts -->
+<script src="script.js"></script>
+<script>
+    // Load the common templates dynamically
+    loadTemplate('header-container', 'header.html');
+    loadTemplate('sidebar-container', 'sidebar.html');
+    loadTemplate('footer-container', 'footer.html');
+
+    function loadTemplate(containerId, templateUrl) {
+        fetch(templateUrl)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(containerId).innerHTML = data;
+        });
+    }
+</script>
+</body>
+</html>
